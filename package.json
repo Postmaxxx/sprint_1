@@ -1,5 +1,32 @@
 {
+  "name": "sprint_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/templates/pages/index.html --open",
+    "build": "parcel build ./src/templates/pages/index.html -d release --no-cache --public-url=. --no-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Postmaxxx/sprint_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Postmaxxx/sprint_1/issues"
+  },
+  "homepage": "https://github.com/Postmaxxx/sprint_1#readme",
   "devDependencies": {
-    "parcel": "^2.0.1"
-  }
+    "cssnano": "^5.1.4",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "postcss": "^8.4.12",
+    "sass": "^1.49.9"
+  },
+  "parcelCleanPaths": [
+    "dist",
+    ".cache",
+    "release"
+  ]
 }
