@@ -2,5 +2,21 @@ extends ../template.pug
 block variables
     - var title = 'Login page'
 
+mixin inputBlock(text, className, type)
+    div.block_input
+        span.className= text
+        input.className(type= type)
+
+
 block header
     include ../components/nav.pug
+
+block content
+    div.container_auth
+        div.login__container
+            h1.login__header Вход
+            div.login__login-form
+                +inputBlock('Логин', login, 'text')
+                +inputBlock('Пароль', password, 'password')
+                button.button.button_green(id='login') Вход
+            a.link_register(href='#') Регистрация
