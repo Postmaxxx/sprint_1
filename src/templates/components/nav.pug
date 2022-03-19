@@ -1,0 +1,11 @@
+nav.menu
+    ul.menu__list
+        mixin nav_el(name, link)
+            li.menu_item
+                a(href= link)= name
+        
+        +nav_el('Главная', '/login.pug')
+        +nav_el('Registration', '#')
+        +nav_el('Chat', '#')
+        +nav_el('404', '/404.pug')
+        +nav_el('500', '/500.pug')

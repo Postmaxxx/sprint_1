@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/templates/pages/index.pug --open",
-    "build": "parcel build ./src/templates/pages/index.pug -d release --no-cache --public-url=. --no-minify"
+    "start": "parcel ./src/templates/pages/*.pug --open http://localhost:1234/login.html",
+    "build": "parcel build ./src/templates/pages/*.pug -d release --no-cache --public-url=. --no-minify"
   },
   "repository": {
     "type": "git",

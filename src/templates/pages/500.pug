@@ -1,0 +1,12 @@
+extends ../template.pug
+block variables
+    - var title = '500 Page'
+
+block header
+    include ../components/nav.pug
+
+block content
+    div.container_error-msg
+        h1.error-msg__header Ошибка 500!
+        p.error-msg__text Внутренняя ошибка, <br> поробуйте позже
+        a.green(href='login.pug') Вернуться назад
